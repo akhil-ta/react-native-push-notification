@@ -54,6 +54,7 @@ public class RNPushNotificationAttributes {
     private static final String ALLOW_WHILE_IDLE = "allowWhileIdle";
     private static final String IGNORE_IN_FOREGROUND = "ignoreInForeground";
     private static final String USER_INFO = "userInfo";
+    private static final String SOUND_NAME = "soundName";
 
     private final String id;
     private final String message;
