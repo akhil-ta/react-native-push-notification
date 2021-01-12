@@ -94,6 +94,7 @@ public class RNPushNotificationAttributes {
     private final boolean allowWhileIdle;
     private final boolean ignoreInForeground;
     private final String soundName;
+    private final String userInfo;
 
     public RNPushNotificationAttributes(Bundle bundle) {
         id = bundle.getString(ID);
@@ -135,6 +136,7 @@ public class RNPushNotificationAttributes {
         allowWhileIdle = bundle.getBoolean(ALLOW_WHILE_IDLE);
         ignoreInForeground = bundle.getBoolean(IGNORE_IN_FOREGROUND);
         soundName = bundle.getString(SOUND_NAME);
+        userInfo = bundle.getString(USER_INFO);
     }
 
     private RNPushNotificationAttributes(JSONObject jsonObject) {
